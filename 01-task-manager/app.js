@@ -4,6 +4,7 @@ const port = 3000;
 const tasks = require("./routes/tasks");
 
 // middleware
+app.use(express.static("./public"));
 app.use(express.json());
 
 // routes
